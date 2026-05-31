@@ -21,7 +21,6 @@ build-mode      = "both"
 version         = "latest"
 arch            = "arm64-v8a"
 cli-source      = "MorpheApp/morphe-cli"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 uptodown-dlurl  = "https://youtube.en.uptodown.com/android"
 
 # ────────────────────────────────────────────────────────────
@@ -34,7 +33,6 @@ build-mode      = "both"
 version         = "latest"
 arch            = "arm64-v8a"
 cli-source      = "MorpheApp/morphe-cli"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 uptodown-dlurl  = "https://youtube-music.en.uptodown.com/android"
 
 # ────────────────────────────────────────────────────────────
@@ -44,10 +42,9 @@ uptodown-dlurl  = "https://youtube-music.en.uptodown.com/android"
 app-name        = "X"
 enabled         = true
 build-mode      = "apk"
-version         = "auto"
+version         = "11.81.0-release.0"
 arch            = "arm64-v8a"
 patches-source  = "crimera/piko"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitter-inc/twitter/"
 uptodown-dlurl  = "https://twitter.en.uptodown.com/android"
 
 # Recommended piko patches — all default-on.
@@ -67,7 +64,7 @@ uptodown-dlurl  = "https://twitter.en.uptodown.com/android"
 app-name        = "Instagram"
 enabled         = true
 build-mode      = "apk"
-version         = "auto"
+version         = "426.0.0.37.68"
 arch            = "arm64-v8a"
 patches-source  = "crimera/piko"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram/"
