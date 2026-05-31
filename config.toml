@@ -7,7 +7,6 @@
 enable-magisk-update = true
  
 parallel-jobs   = 1
-patches-source  = "MorpheApp/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 patches-version = "latest"
 cli-version     = "latest"
@@ -15,7 +14,6 @@ rv-brand        = "Morphe"
  
 # ────────────────────────────────────────────────────────────
 # YouTube (Morphe)
-# patches-source inherited from global
 # ────────────────────────────────────────────────────────────
 [YouTube-Morphe]
 app-name        = "YouTube-Morphe"
@@ -23,12 +21,12 @@ enabled         = true
 build-mode      = "both"
 version         = "auto"
 arch            = "arm64-v8a"
+cli-source      = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 uptodown-dlurl  = "https://youtube.en.uptodown.com/android"
  
 # ────────────────────────────────────────────────────────────
 # YouTube Music (Morphe)
-# patches-source inherited from global
 # ────────────────────────────────────────────────────────────
 [YouTube-Music-Morphe]
 app-name        = "YouTube-Music-Morphe"
@@ -36,11 +34,11 @@ enabled         = true
 build-mode      = "both"
 version         = "auto"
 arch            = "arm64-v8a"
+cli-source      = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 uptodown-dlurl  = "https://youtube-music.en.uptodown.com/android"
 # ────────────────────────────────────────────────────────────
 # X / Twitter — patches from crimera/piko
-# Overrides global patches-source for this app only
 # ────────────────────────────────────────────────────────────
 [X]
 app-name        = "X"
@@ -63,7 +61,6 @@ uptodown-dlurl  = "https://twitter.en.uptodown.com/android"
  
 # ────────────────────────────────────────────────────────────
 # Google Photos — patches from RookieEnough/De-Vanced
-# Overrides global patches-source for this app only
 # ────────────────────────────────────────────────────────────
 [Google-Photos]
 app-name        = "Google-Photos"
