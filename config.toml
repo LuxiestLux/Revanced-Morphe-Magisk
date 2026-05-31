@@ -1,17 +1,16 @@
-
 # ============================================================
 # Revanced-Morphe-Magisk config.toml
 # See CONFIG.md for full documentation on all options
 # ============================================================
- 
+
 enable-magisk-update = true
- 
+
 parallel-jobs   = 1
 cli-source      = "MorpheApp/morphe-cli"
 patches-version = "latest"
 cli-version     = "latest"
 rv-brand        = "Morphe"
- 
+
 # ────────────────────────────────────────────────────────────
 # YouTube (Morphe)
 # ────────────────────────────────────────────────────────────
@@ -24,7 +23,7 @@ arch            = "arm64-v8a"
 cli-source      = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 uptodown-dlurl  = "https://youtube.en.uptodown.com/android"
- 
+
 # ────────────────────────────────────────────────────────────
 # YouTube Music (Morphe)
 # ────────────────────────────────────────────────────────────
@@ -37,18 +36,20 @@ arch            = "arm64-v8a"
 cli-source      = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 uptodown-dlurl  = "https://youtube-music.en.uptodown.com/android"
+
 # ────────────────────────────────────────────────────────────
 # X / Twitter — patches from crimera/piko
 # ────────────────────────────────────────────────────────────
 [X]
 app-name        = "X"
 enabled         = true
-build-mode      = "both"
-version         = "11.81.0-release.0"
+build-mode      = "apk"
+version         = "auto"
 arch            = "arm64-v8a"
 patches-source  = "crimera/piko"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitter-inc/twitter/"
 uptodown-dlurl  = "https://twitter.en.uptodown.com/android"
+
 # Recommended piko patches — all default-on.
 # Comment out any you don't want, or add more from the patch list below.
 # Full list: https://github.com/crimera/piko#%EF%B8%8F-patch-details
@@ -58,7 +59,35 @@ uptodown-dlurl  = "https://twitter.en.uptodown.com/android"
 #
 # To force-include non-default patches, uncomment and edit:
 # included-patches = "'Download patch' 'Enable Reader Mode' 'Enable Undo Posts'"
- 
+
+# ────────────────────────────────────────────────────────────
+# Instagram — patches from crimera/piko
+# ────────────────────────────────────────────────────────────
+[Instagram]
+app-name        = "Instagram"
+enabled         = true
+build-mode      = "apk"
+version         = "auto"
+arch            = "arm64-v8a"
+patches-source  = "crimera/piko"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram/"
+uptodown-dlurl  = "https://instagram.en.uptodown.com/android"
+
+# Available piko patches for Instagram (all default-on unless marked otherwise):
+#   - Disable ads              — removes ads and sponsored posts in feed
+#   - Disable suggested posts  — hides "Suggested for you" in feed
+#   - Download media           — adds download button for photos/videos/reels
+#   - AMOLED theme             — replaces dark mode greys with pure black
+#   - Disable Reels scrolling  — stops auto-scroll to next Reel
+#   - Block analytics          — blocks tracking sent to Meta servers
+#   - Add settings             — adds a piko settings menu inside Instagram
+#
+# To exclude specific patches, uncomment and edit:
+# excluded-patches = "'AMOLED theme' 'Disable Reels scrolling'"
+#
+# To force-include non-default patches, uncomment and edit:
+# included-patches = "'Follows you back label'"
+
 # ────────────────────────────────────────────────────────────
 # Google Photos — patches from RookieEnough/De-Vanced
 # ────────────────────────────────────────────────────────────
@@ -69,9 +98,9 @@ build-mode      = "both"
 version         = "latest"
 arch            = "arm64-v8a"
 patches-source  = "RookieEnough/De-Vanced"
-apkmirror-dlurl = "https://www.apkmirror.com/aplatestk/google-inc/photos/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl  = "https://google-photos.en.uptodown.com/android"
- 
+
 # De-Vanced includes these patches for Google Photos:
 #   - Spoof features
 #   - Backup control
@@ -81,4 +110,3 @@ uptodown-dlurl  = "https://google-photos.en.uptodown.com/android"
 #
 # To exclude specific patches, uncomment and edit:
 # excluded-patches = "'Backup control'"
- 
