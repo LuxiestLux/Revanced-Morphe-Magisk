@@ -1,4 +1,4 @@
-Google-Photos: 7.80.0.929302933  
+Google-Photos: 7.81.0.932521513  
 X: 12.0.0-release.0  
 YouTube-Morphe: 20.51.39  
 YouTube-Music-Morphe: 8.51.51  
@@ -10,8 +10,8 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 
  Forked from: [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
-Patches: crimera/patches-3.5.1-dev.1.mpp  
-[Changelog](https://github.com/crimera/piko/releases/tag/v3.5.1-dev.1)
+Patches: crimera/patches-3.6.0.mpp  
+[Changelog](https://github.com/crimera/piko/releases/tag/v3.6.0)
 
 Patches: MorpheApp/patches-1.31.0.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.31.0)
